@@ -15,9 +15,6 @@ WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 See the License for the specific language governing permissions and
 limitations under the License.
 -->
-    <!-- Uncomment to use Endpoints Frameworks v1.0 and comment the v2.0 section -->
-    <!--
-    [START appengine-endpoints]
     <servlet>
         <servlet-name>SystemServiceServlet</servlet-name>
         <servlet-class>com.google.api.server.spi.SystemServiceServlet</servlet-class>
@@ -34,30 +31,6 @@ limitations under the License.
         <servlet-name>SystemServiceServlet</servlet-name>
         <url-pattern>/_ah/spi/*</url-pattern>
     </servlet-mapping>
-    [END appengine-endpoints]
-    -->
-    <!-- End of Endpoints Frameworks v1.0 -->
-
-    <!-- Endpoints Frameworks v2.0 -->
-    <!-- [START endpoints-frameworks] -->
-    <servlet>
-        <servlet-name>EndpointsServlet</servlet-name>
-        <servlet-class>com.google.api.server.spi.EndpointsServlet</servlet-class>
-        <init-param>
-            <param-name>services</param-name>
-            <param-value>com.example.helloendpoints.Greetings</param-value>
-        </init-param>
-        <init-param>
-            <param-name>restricted</param-name>
-            <param-value>false</param-value>
-        </init-param>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>EndpointsServlet</servlet-name>
-        <url-pattern>/_ah/api/*</url-pattern>
-    </servlet-mapping>
-    <!-- [END endpoints-frameworks] -->
-    <!-- End of Endpoints Frameworks v2.0 -->
 
     <welcome-file-list>
         <welcome-file>index.html</welcome-file>

@@ -49,15 +49,7 @@ dependencies {
   compile 'jstl:jstl:1.2'
   compile group: 'javax.inject', name: 'javax.inject', version: '1'
 
-  // Uncomment to use Endpoints Frameworks v1.0 and comment the v2.0 section
-  // compile group: 'com.google.appengine', name: 'appengine-endpoints', version: '+'
-  // End of Endpoints Frameworks v1.0
-
-  // Endpoints Frameworks v2.0
-  // [START endpoints-tools]
-  compile group: 'com.google.endpoints', name: 'endpoints-framework-tools', version: '+'
-  // [END endpoints-tools]
-  // End of Endpoints Frameworks v2.0
+  compile group: 'com.google.appengine', name: 'appengine-endpoints', version: '+'
 }
 
 appengine {  // App Engine tasks configuration
